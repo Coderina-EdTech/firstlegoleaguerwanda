@@ -17,7 +17,7 @@ const Footer = () => {
           <h1 className="font-semibold text-2xl md:text-4xl ">
             Get started with FIRST® LEGO® League
           </h1>
-          <p className="text-xl md:text-2xl leading-8">
+          <p className="text-xl md:text-2xl leading-[38px] md:leading-[47.2px]">
             A chance to shine! Each FIRST LEGO League season culminates in
             celebration where teams show off what they learned and invented, and
             in our oldest division, compete with their robots.

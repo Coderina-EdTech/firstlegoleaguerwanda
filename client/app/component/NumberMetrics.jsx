@@ -22,7 +22,7 @@ const NumberMetrics = () => {
               duration={2}
               className=" text-lg md:text-3xl font-bold"
             />
-            <p className="text-sm md:text-lg count">Teachers Trained</p>
+            <p className="text-sm md:text-lg">Robots Built</p>
           </div>
           <div className="flex flex-col items-center justify-center text-[#0d2b42] cursor-pointer text-center counter font-bold">
             <CountUp
@@ -32,7 +32,7 @@ const NumberMetrics = () => {
               duration={2}
               className=" text-lg md:text-3xl font-bold"
             />
-            <p className="text-sm md:text-lg">Positive Feedback</p>
+            <p className="text-sm md:text-lg count">Teachers Trained</p>
           </div>
           <div className="flex flex-col items-center justify-center text-[#0d2b42] cursor-pointer text-center counter font-bold">
             <CountUp
@@ -43,16 +43,6 @@ const NumberMetrics = () => {
               className=" text-lg md:text-3xl font-bold"
             />
             <p className="text-sm md:text-lg">Student Impacted</p>
-          </div>
-          <div className="flex flex-col items-center justify-center text-[#0d2b42] cursor-pointer text-center counter font-bold">
-            <CountUp
-              start={0}
-              end={5}
-              suffix="K"
-              duration={2}
-              className=" text-lg md:text-3xl font-bold"
-            />
-            <p className="text-sm md:text-lg">Robot Built</p>
           </div>
         </div>
       )}
