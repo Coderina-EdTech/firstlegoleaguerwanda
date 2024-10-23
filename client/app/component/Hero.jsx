@@ -52,8 +52,8 @@ const Hero = () => {
               </button>
             </Link>
             <Link href="/">
-              <button className="border border-white text-white text-lg px-3 py-3 rounded-md hover:border-gray-400">
-                Sign Up your School
+              <button className="border border-white text-white text-[16px] px-3 py-3 rounded-md hover:border-gray-400">
+                Register Your School
               </button>
             </Link>
           </div>

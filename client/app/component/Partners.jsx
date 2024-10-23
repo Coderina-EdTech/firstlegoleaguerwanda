@@ -5,6 +5,7 @@ import part3 from "../../public/partner3.png";
 import part4 from "../../public/partner4.png";
 import part5 from "../../public/partner5.png";
 import part6 from "../../public/partner6.png";
+import part7 from "../../public/first.png";
 import Image from "next/image";
 
 const Partners = () => {
@@ -27,6 +28,9 @@ const Partners = () => {
       </div>
       <div className="w-[15rem] h-[9rem]">
         <Image src={part6} alt="" className="object-contain w-full h-full" />
+      </div>
+      <div className="w-[15rem] h-[9rem]">
+        <Image src={part7} alt="" className="object-contain w-full h-full" />
       </div>
     </div>
   );

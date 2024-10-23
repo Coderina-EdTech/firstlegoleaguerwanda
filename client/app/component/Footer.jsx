@@ -9,12 +9,12 @@ const Footer = () => {
         {/* Banner Image Slider */}
         <div className="absolute inset-0">
           <Image src={game} alt="" fill className="object-cover" />
-          <div className="absolute inset-0 bg-black opacity-70"></div>
+          <div className="absolute inset-0 bg-black opacity-75"></div>
         </div>
 
         {/* overlay object */}
-        <div className="absolute font-Poppins space-y-5 md:space-y-4 text-center inset-0 flex flex-col justify-center items-center lg:px-16 text-white">
-          <h1 className="font-semibold text-[20px] md:text-lg text-xl">
+        <div className="absolute px-2 md:px-4 font-Poppins space-y-2 lg:space-y-5 md:space-y-4 text-center inset-0 flex flex-col justify-center items-center lg:px-16 text-white">
+          <h1 className="font-semibold text-[20px] md:text-lg text-2xl">
             Get started with FIRST® LEGO® League
           </h1>
           <p className="text-lg leading-8">
@@ -25,15 +25,17 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-center justify-center space-y-4 py-8">
-        <Image
-          src={first}
-          alt=""
-          className="w-[8rem] h-[3rem] object-contain"
-        />
+      <div className="w-full space-y-4 py-8">
+        <div className="w-full flex items-center justify-center">
+          <Image
+            src={first}
+            alt=""
+            className="w-[8rem] h-[4rem] object-contain mb-8"
+          />
+        </div>
         <div>
-          <p className="text-sm text-center">
-            © 2023 First Lego League Rwanda / All Rights Reserved
+          <p className="text-[13px] md:text-sm lg:text-[16px] text-center border-t-[1.4px] border-black py-4">
+            © 2023 First Lego League Nigeria / All Rights Reserved
           </p>
         </div>
       </div>

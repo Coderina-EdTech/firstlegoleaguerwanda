@@ -11,7 +11,7 @@ const Header = () => {
       {/* upside */}
       <div className="flex items-center justify-between md:px-6 lg:px-24 py-3 md:py-2 rounded-md bg-blue-700 text-white px-2">
         <div>
-          <p className="text-[12px]  text-normal">rwandafll@coderina.org</p>
+          <p className="text-[12px]  text-normal">nigeriafll@coderina.org</p>
         </div>
         {/* social media handles */}
         <div className="flex items-center justify-center space-x-4">
@@ -32,8 +32,8 @@ const Header = () => {
         <div className="hidden md:flex items-center justify-center space-x-5 text-[14px] md:text-[12.3px] lg:text-[15px] font-semibold">
           <p>HOME</p>
           <p>ABOUT US</p>
-          <p> OUR EVENTS</p>
-          <p> PHOTO GALLERY</p>
+          <p> EVENTS</p>
+
           <p> NEWS AND UPDATES </p>
           <p> GET INVOLVED</p>
         </div>
