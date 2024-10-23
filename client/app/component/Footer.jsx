@@ -13,11 +13,11 @@ const Footer = () => {
         </div>
 
         {/* overlay object */}
-        <div className="absolute px-2 md:px-4 font-Poppins space-y-2 lg:space-y-5 md:space-y-4 text-center inset-0 flex flex-col justify-center items-center lg:px-16 text-white">
-          <h1 className="font-semibold text-[20px] md:text-lg text-2xl">
+        <div className="absolute px-2 md:px-8 font-Poppins space-y-2 lg:space-y-5 md:space-y-4 text-center inset-0 flex flex-col justify-center items-center lg:px-24 text-white">
+          <h1 className="font-semibold text-2xl md:text-4xl ">
             Get started with FIRST® LEGO® League
           </h1>
-          <p className="text-lg leading-8">
+          <p className="text-xl md:text-2xl leading-8">
             A chance to shine! Each FIRST LEGO League season culminates in
             celebration where teams show off what they learned and invented, and
             in our oldest division, compete with their robots.
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
         <div>
           <p className="text-[13px] md:text-sm lg:text-[16px] text-[#0d2b42] text-center border-t-[1.4px] border-black py-4">
-            © 2023 First Lego League Nigeria / All Rights Reserved
+            © 2024 First Lego League Nigeria / All Rights Reserved
           </p>
         </div>
       </div>

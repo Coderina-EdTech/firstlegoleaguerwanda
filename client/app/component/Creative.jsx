@@ -2,7 +2,7 @@ import React from "react";
 
 const Creative = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row items-center justify-center">
+    <div className="w-full flex flex-col md:flex-row items-center justify-center mt-9">
       <div className="bg-[#0d2b42] text-center text-white px-3 py-8  lg:px-14 lg:py-12 space-y-4 md:w-[35%] font-Roboto">
         <h1 className="text-2xl font-semibold leading-8">
           Start a FIRST® LEGO® League Team

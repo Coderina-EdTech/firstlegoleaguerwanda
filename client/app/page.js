@@ -13,6 +13,7 @@ import Conter from "./component/Conter";
 import Footer from "./component/Footer";
 import NumberMetrics from "./component/NumberMetrics";
 import Features from "./component/Features";
+import Card from "./component/Card";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Header />
       <Hero />
       <NumberMetrics />
+      <Card />
 
       <Creative />
       <Conter />

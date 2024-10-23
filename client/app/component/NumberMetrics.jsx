@@ -11,7 +11,7 @@ const NumberMetrics = () => {
     threshold: 0.5, // Trigger when 50% of the element is in view
   });
   return (
-    <div className="py-10 lg:mt-[12.3rem]" ref={ref}>
+    <div className="" ref={ref}>
       {inView && (
         <div className="flex items-center justify-between md:justify-around py-5 px-3 md:px-10 bg-[#a8a4a4]">
           <div className="flex flex-col items-center justify-center text-[#0d2b42] cursor-pointer text-center counter font-bold">
