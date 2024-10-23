@@ -38,11 +38,11 @@ const Hero = () => {
         </div>
 
         {/*================== Overlay content ====================*/}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-          <h1 className="text-white text-xl sm:text-5xl md:text-4xl mb-4 ">
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-2 md:px-4">
+          <h1 className="text-white text-[22px] sm:text-5xl md:text-4xl mb-4 ">
             The home for young innovators and
           </h1>
-          <h1 className="text-white text-xl sm:text-5xl md:text-4xl mb-4  ">
+          <h1 className="text-white text-[22px] sm:text-5xl md:text-4xl mb-4  ">
             future leaders in science and technology
           </h1>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex sm:flex-row flex-col mt-4">

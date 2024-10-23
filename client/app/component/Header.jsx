@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { IoLogoInstagram } from "react-icons/io";
 import { SiFacebook } from "react-icons/si";
@@ -9,6 +11,7 @@ import Link from "next/link";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -50,7 +53,7 @@ const Header = () => {
           <Link href="/about" onClick={scrollToTop}>
             <p className={isActive ? activeLink : normalLink}>ABOUT US</p>
           </Link>
-          <Link href="/events" onClick={scrollToTop}>
+          <Link href="/event" onClick={scrollToTop}>
             <p className={isActive ? activeLink : normalLink}>EVENTS</p>
           </Link>
           <Link href="/news" onClick={scrollToTop}>
@@ -58,12 +61,78 @@ const Header = () => {
               NEWS AND UPDATES
             </p>
           </Link>
-          <Link href="/news" onClick={scrollToTop}>
+          <Link href="/involve" onClick={scrollToTop}>
             <p className={isActive ? activeLink : normalLink}>GET INVOLVED</p>
           </Link>
         </div>
-        <div className="block md:hidden text-3xl">
-          <RiMenu4Line />
+
+        {/* menu
+         */}
+        <div className="block md:hidden">
+          {/* Mobile Menu Icon */}
+          <div
+            className=" text-3xl text-red-700 cursor-pointer"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <RiMenu4Line />
+          </div>
+        </div>
+
+        {/* Sliding Mobile Menu */}
+        <div
+          className={`md:hidden fixed top-0 left-0 w-full bg-white/30 backdrop-blur-md shadow-lg transition-transform duration-300 ease-in-out ${
+            menuOpen ? "translate-y-0" : "-translate-y-full"
+          }`}
+        >
+          <div className="p-5 flex flex-col space-y-4 text-center text-[15px] font-semibold">
+            <Link
+              href="/"
+              onClick={() => {
+                setMenuOpen(false);
+                scrollToTop();
+              }}
+            >
+              <p className={isActive ? activeLink : normalLink}>HOME</p>
+            </Link>
+            <Link
+              href="/about"
+              onClick={() => {
+                setMenuOpen(false);
+                scrollToTop();
+              }}
+            >
+              <p className={isActive ? activeLink : normalLink}>ABOUT US</p>
+            </Link>
+            <Link
+              href="/event"
+              onClick={() => {
+                setMenuOpen(false);
+                scrollToTop();
+              }}
+            >
+              <p className={isActive ? activeLink : normalLink}>EVENTS</p>
+            </Link>
+            <Link
+              href="/news"
+              onClick={() => {
+                setMenuOpen(false);
+                scrollToTop();
+              }}
+            >
+              <p className={isActive ? activeLink : normalLink}>
+                NEWS AND UPDATES
+              </p>
+            </Link>
+            <Link
+              href="/involve"
+              onClick={() => {
+                setMenuOpen(false);
+                scrollToTop();
+              }}
+            >
+              <p className={isActive ? activeLink : normalLink}>GET INVOLVED</p>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

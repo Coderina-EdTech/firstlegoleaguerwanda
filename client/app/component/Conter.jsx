@@ -3,6 +3,7 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import color from "../../public/color.jpg";
+import pic from "../../public/pic1.jpg";
 const Conter = () => {
   const [hasStarted, setHasStarted] = useState(false);
   const { ref, inView } = useInView({
@@ -82,24 +83,11 @@ const Conter = () => {
         </div>
 
         <div className="px-3 lg:px-16 space-y-3">
-          <h1 className="text-2xl font-semibold">Our Counter</h1>
-          <p className="text-[13px]">
-            FIRST Tech Challenge students learn to think like engineers. Teams
-            design,
-          </p>
-
-          <div className="bg-blue-700 lg:w-80 ">
-            <div className="bg-white p-4 lg:w-80 border-t-8 border-blue-700 text-[13px] text-black leading-5 space-y-3">
-              <p>
-                FIRST Tech Challenge students learn to think like engineers.
-                Teams design, build, and code robots to compete in an alliance
-                format against other teams.
-              </p>
-              <p>
-                FIRST Tech Challenge students learn to think like engineers.
-                Teams design, build, and code robots to compete in an alliance
-                format against other teams.
-              </p>
+          <div className="bg-[#0d2b42] lg:w-80 ">
+            <div className="bg-white p-2 lg:w-80 rounded-3xl">
+              <div>
+                <Image src={pic} alt="" />
+              </div>
             </div>
           </div>
         </div>

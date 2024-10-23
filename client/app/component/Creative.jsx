@@ -17,7 +17,7 @@ const Creative = () => {
         </p>
         <button>Get Started</button>
       </div>
-      <div className="w-full md:w-[65%] font-poppins pl-6 md:px-8 lg:px-20 py-14 grid grid-cols-2 bg-blue-50 items-center justify-center">
+      <div className="w-full md:w-[65%] font-poppins pl-6 md:px-8 lg:px-20 py-14 hidden md:grid grid-cols-2 bg-blue-50 items-center justify-center">
         <div className=" md:pl-4 space-y-2 lg:space-y-4">
           <div className=" relative">
             <div className="space-y-2 pr-4 md:px-6">

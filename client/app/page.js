@@ -18,7 +18,6 @@ import Card from "./component/Card";
 export default function Home() {
   return (
     <div className="scroll-smooth">
-      <Header />
       <Hero />
       <NumberMetrics />
       <Card />
@@ -29,7 +28,6 @@ export default function Home() {
       <Features />
       <Blog />
       <Partners />
-      <Footer />
     </div>
   );
 }

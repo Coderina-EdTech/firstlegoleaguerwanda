@@ -67,8 +67,10 @@ const Partners = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center pt-8">
-        <h1 className="font-extrabold md:text-3xl font-Roboto">Organized by</h1>
-        <div className="w-[10rem] md:w-[18rem] h-[11rem]">
+        <h1 className="font-extrabold text-xl md:text-3xl font-Roboto">
+          Organized by
+        </h1>
+        <div className="w-[12rem] md:w-[18rem] h-[11rem] md:h-[13rem]">
           <Image src={part8} alt="" className="object-contain w-full h-full" />
         </div>
       </div>
