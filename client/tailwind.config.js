@@ -10,6 +10,8 @@ module.exports = {
       Roboto: ["Roboto", "sans-serif"],
       mulish: ["Mulish", "sans-serif"],
       Poppins: ["Poppins", "sans-serif"],
+      Lato: ["Lato", "sans-serif"],
+      Montserrat: ["Montserrat", "sans-serif"],
     },
     extend: {
       backgroundImage: {

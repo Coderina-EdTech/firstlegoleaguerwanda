@@ -25,7 +25,7 @@ const Hero = () => {
   };
   return (
     <div>
-      <section className="relative h-[93vh]">
+      <section className="relative h-[93vh] font-lato">
         {/* Banner Image Slider */}
         <div className="absolute inset-0">
           <Image
@@ -73,7 +73,7 @@ const Hero = () => {
         </div>
 
         {/* cards */}
-        <div className=" absolute lg:-bottom-[15rem] hidden lg:grid md:grid-cols-4 w-full text-black items-center justify-center lg:px-[9rem]">
+        <div className=" md:absolute lg:-bottom-[15rem] hidden lg:grid md:grid-cols-4 w-full text-black items-center justify-center lg:px-[9rem]">
           <div class="hover:cursor-pointer md:w-[15rem] h-[18rem]  space-y-2 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg shadow-lg border border-white border-opacity-20 py-5 px-4">
             <div className="flex items-center justify-between px-4">
               <div class=" text-opacity-80 text-center text-[15px]">

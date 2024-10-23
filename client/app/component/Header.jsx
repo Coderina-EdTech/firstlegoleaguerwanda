@@ -3,11 +3,11 @@ import { IoLogoInstagram } from "react-icons/io";
 import { SiFacebook } from "react-icons/si";
 import { RiTwitterFill } from "react-icons/ri";
 import Image from "next/image";
-import logo from "../../public/first.png";
+import logo from "../../public/firstlogo.png";
 import { RiMenu4Line } from "react-icons/ri";
 const Header = () => {
   return (
-    <div className=" shadow-md sticky top-0 bottom-0 bg-white z-[999] ">
+    <div className="font-Lato shadow-md sticky top-0 bottom-0 bg-white z-[999] ">
       {/* upside */}
       <div className="flex items-center justify-between md:px-6 lg:px-24 py-3 md:py-2 rounded-md bg-blue-700 text-white px-2">
         <div>
@@ -29,7 +29,7 @@ const Header = () => {
             className="w-[8rem] h-[3rem] object-contain"
           />
         </div>
-        <div className="hidden md:flex items-center justify-center space-x-5 text-[14px] font-semibold">
+        <div className="hidden md:flex items-center justify-center space-x-5 text-[14px] md:text-[12.3px] lg:text-[15px] font-semibold">
           <p>HOME</p>
           <p>ABOUT US</p>
           <p> OUR EVENTS</p>

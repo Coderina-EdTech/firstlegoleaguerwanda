@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import first from "../../public/first.png";
+import first from "../../public/firstlogo.png";
 import game from "../../public/game.jpg";
 const Footer = () => {
   return (
@@ -13,9 +13,11 @@ const Footer = () => {
         </div>
 
         {/* overlay object */}
-        <div className="absolute space-y-3 text-center inset-0 flex flex-col justify-center items-center lg:px-16 text-white">
-          <h1>Get started with FIRST® LEGO® League</h1>
-          <p>
+        <div className="absolute font-Poppins space-y-5 md:space-y-4 text-center inset-0 flex flex-col justify-center items-center lg:px-16 text-white">
+          <h1 className="font-semibold text-[20px] md:text-lg text-xl">
+            Get started with FIRST® LEGO® League
+          </h1>
+          <p className="text-lg leading-8">
             A chance to shine! Each FIRST LEGO League season culminates in
             celebration where teams show off what they learned and invented, and
             in our oldest division, compete with their robots.
@@ -23,10 +25,16 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center space-y-4 py-8">
-        <Image src={first} alt="" />
+      <div className="w-full flex flex-col items-center justify-center space-y-4 py-8">
+        <Image
+          src={first}
+          alt=""
+          className="w-[8rem] h-[3rem] object-contain"
+        />
         <div>
-          <p>© 2023 First Lego League Rwanda / All Rights Reserved</p>
+          <p className="text-sm text-center">
+            © 2023 First Lego League Rwanda / All Rights Reserved
+          </p>
         </div>
       </div>
     </div>

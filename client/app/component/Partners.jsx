@@ -9,8 +9,8 @@ import Image from "next/image";
 
 const Partners = () => {
   return (
-    <div className="px-24  flex items-center justify-center space-x-6 bg-blue-700">
-      <div className="w-[15rem] h-[9rem]">
+    <div className="px-2 md:px-4 lg:px-24  flex items-center justify-center space-x-2 lg:space-x-6 bg-blue-700">
+      <div className="w-[10rem] md:w-[15rem] h-[9rem]">
         <Image src={part1} alt="" className="object-contain w-full h-full" />
       </div>
       <div className="w-[15rem] h-[9rem]">
