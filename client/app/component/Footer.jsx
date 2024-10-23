@@ -34,7 +34,7 @@ const Footer = () => {
           />
         </div>
         <div>
-          <p className="text-[13px] md:text-sm lg:text-[16px] text-center border-t-[1.4px] border-black py-4">
+          <p className="text-[13px] md:text-sm lg:text-[16px] text-[#0d2b42] text-center border-t-[1.4px] border-black py-4">
             © 2023 First Lego League Nigeria / All Rights Reserved
           </p>
         </div>

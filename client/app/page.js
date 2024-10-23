@@ -23,8 +23,8 @@ export default function Home() {
 
       <Creative />
       <Conter />
-      <Cards />
-      <Features/>
+
+      <Features />
       <Blog />
       <Partners />
       <Footer />

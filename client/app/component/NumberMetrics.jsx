@@ -11,10 +11,10 @@ const NumberMetrics = () => {
     threshold: 0.5, // Trigger when 50% of the element is in view
   });
   return (
-    <div className="py-10 lg:mt-[16rem]" ref={ref}>
+    <div className="py-10 lg:mt-[12.3rem]" ref={ref}>
       {inView && (
-        <div className="flex items-center justify-between md:justify-around p-5 md:px-10 bg-[#ECECEC]">
-          <div className="flex flex-col items-center justify-center text-[#0524C9] cursor-pointer text-center counter font-bold">
+        <div className="flex items-center justify-between md:justify-around py-5 px-3 md:px-10 bg-[#a8a4a4]">
+          <div className="flex flex-col items-center justify-center text-[#0d2b42] cursor-pointer text-center counter font-bold">
             <CountUp
               start={0}
               end={3}
@@ -24,7 +24,7 @@ const NumberMetrics = () => {
             />
             <p className="text-sm md:text-lg count">Teachers Trained</p>
           </div>
-          <div className="flex flex-col items-center justify-center text-[#0524C9] cursor-pointer text-center counter font-bold">
+          <div className="flex flex-col items-center justify-center text-[#0d2b42] cursor-pointer text-center counter font-bold">
             <CountUp
               start={0}
               end={150}
@@ -34,7 +34,7 @@ const NumberMetrics = () => {
             />
             <p className="text-sm md:text-lg">Positive Feedback</p>
           </div>
-          <div className="flex flex-col items-center justify-center text-[#0524C9] cursor-pointer text-center counter font-bold">
+          <div className="flex flex-col items-center justify-center text-[#0d2b42] cursor-pointer text-center counter font-bold">
             <CountUp
               start={0}
               end={15}
@@ -44,7 +44,7 @@ const NumberMetrics = () => {
             />
             <p className="text-sm md:text-lg">Student Impacted</p>
           </div>
-          <div className="flex flex-col items-center justify-center text-[#0524C9] cursor-pointer text-center counter font-bold">
+          <div className="flex flex-col items-center justify-center text-[#0d2b42] cursor-pointer text-center counter font-bold">
             <CountUp
               start={0}
               end={5}

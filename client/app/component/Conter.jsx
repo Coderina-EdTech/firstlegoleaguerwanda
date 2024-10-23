@@ -15,7 +15,7 @@ const Conter = () => {
   }
 
   return (
-    <div className="h-[93vh] relative">
+    <div className="h-[70vh] md:h-[93vh] relative">
       {/* Banner Image Slider */}
       <div className="absolute inset-0">
         <Image src={color} alt="" fill className="object-cover" />
@@ -26,7 +26,7 @@ const Conter = () => {
       <div className="absolute inset-0 flex justify-center items-center lg:px-16 text-white">
         <div
           ref={ref}
-          className="grid md:grid-cols-2 items-center justify-center gap-5 md:w-[50%] lg:px-8"
+          className="hidden lg:grid md:grid-cols-2 items-center justify-center gap-5 md:w-[50%] lg:px-8 "
         >
           {hasStarted && (
             <>
@@ -81,7 +81,7 @@ const Conter = () => {
           )}
         </div>
 
-        <div className="lg:px-16 space-y-3">
+        <div className="px-3 lg:px-16 space-y-3">
           <h1 className="text-2xl font-semibold">Our Counter</h1>
           <p className="text-[13px]">
             FIRST Tech Challenge students learn to think like engineers. Teams

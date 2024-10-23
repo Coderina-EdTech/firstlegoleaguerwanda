@@ -3,7 +3,7 @@ import React from "react";
 const Creative = () => {
   return (
     <div className="w-full flex flex-col md:flex-row items-center justify-center">
-      <div className="bg-blue-700 text-center text-white px-3 py-8  lg:px-14 lg:py-12 space-y-4 md:w-[35%] font-Roboto">
+      <div className="bg-[#0d2b42] text-center text-white px-3 py-8  lg:px-14 lg:py-12 space-y-4 md:w-[35%] font-Roboto">
         <h1 className="text-2xl font-semibold leading-8">
           Start a FIRST® LEGO® League Team
         </h1>
@@ -28,7 +28,7 @@ const Creative = () => {
                 math through robotics competitions.
               </p>
             </div>
-            <p className="absolute text-sm lg:text-lg bg-blue-700 rounded-[50%] px-2 lg:px-3 py-1 top-6 font-bold -left-8 shadow-xl text-white">
+            <p className="absolute text-sm lg:text-lg bg-[#0d2b42] rounded-[50%] px-2 lg:px-3 py-1 top-6 font-bold -left-8 shadow-xl text-white">
               1
             </p>
           </div>
@@ -41,7 +41,7 @@ const Creative = () => {
                 collaborative projects.
               </p>
             </div>
-            <p className="absolute text-sm lg:text-lg bg-blue-700 rounded-[50%] px-2 lg:px-3 py-1 top-6 font-bold -left-8 shadow-xl text-white">
+            <p className="absolute text-sm lg:text-lg bg-[#0d2b42] rounded-[50%] px-2 lg:px-3 py-1 top-6 font-bold -left-8 shadow-xl text-white">
               2
             </p>
           </div>
@@ -57,7 +57,7 @@ const Creative = () => {
                 kits.
               </p>
             </div>
-            <p className="absolute text-sm lg:text-lg bg-blue-700 rounded-[50%] px-2 lg:px-3 py-1 top-6 font-bold -left-8 shadow-xl text-white">
+            <p className="absolute text-sm lg:text-lg bg-[#0d2b42] rounded-[50%] px-2 lg:px-3 py-1 top-6 font-bold -left-8 shadow-xl text-white">
               3
             </p>
           </div>
@@ -75,7 +75,7 @@ const Creative = () => {
                 themes.
               </p>
             </div>
-            <p className="absolute text-sm lg:text-lg bg-blue-700 rounded-[50%] px-2 lg:px-3 py-1 top-6 font-bold -left-8 shadow-xl text-white">
+            <p className="absolute text-sm lg:text-lg bg-[#0d2b42] rounded-[50%] px-2 lg:px-3 py-1 top-6 font-bold -left-8 shadow-xl text-white">
               4
             </p>
           </div>
@@ -88,7 +88,7 @@ const Creative = () => {
                 transportation.
               </p>
             </div>
-            <p className="absolute text-sm lg:text-lg bg-blue-700 rounded-[50%] px-2 lg:px-3 py-1 top-6 font-bold -left-8 shadow-xl text-white">
+            <p className="absolute text-sm lg:text-lg bg-[#0d2b42] rounded-[50%] px-2 lg:px-3 py-1 top-6 font-bold -left-8 shadow-xl text-white">
               5
             </p>
           </div>
@@ -101,7 +101,7 @@ const Creative = () => {
                 teamwork.
               </p>
             </div>
-            <p className="absolute text-sm lg:text-lg bg-blue-700 rounded-[50%] px-2 lg:px-3 py-1 top-6 font-bold -left-8 shadow-xl text-white">
+            <p className="absolute text-sm lg:text-lg bg-[#0d2b42] rounded-[50%] px-2 lg:px-3 py-1 top-6 font-bold -left-8 shadow-xl text-white">
               6
             </p>
           </div>

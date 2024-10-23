@@ -11,49 +11,49 @@ const Featuredata = [
   {
     id: 1,
     icon: icon1,
-    title: "Personalize Invite",
-    text: "Easily customize invitations effortlessly to reflect your unique style and event theme",
+    title: "Robotics Learning",
+    text: "Introduce students to science and engineering through hands-on robotics activities.",
   },
   {
     id: 2,
     icon: icon2,
-    title: "Feedback Message",
-    text: "Stay informed about guest attendance with RSVP responses indicating their attendance status",
+    title: "Collaborative Teamwork",
+    text: "Foster teamwork and innovation, encouraging students to work together to solve problems.",
   },
   {
     id: 3,
     icon: icon3,
-    title: "Guest List Tracking",
-    text: "Manage your guest list and track delivery status to recipients' emails with precision",
+    title: "Mission Challenges",
+    text: "Teams build and program robots to complete real-world missions using LEGO kits.",
   },
   {
     id: 4,
     icon: icon4,
-    title: "Event Reminder",
-    text: "Never miss a beat, Receive timely reminders for both hosts and RSVPs as the big day approaches",
+    title: "Innovative Solutions",
+    text: "Encourage creativity as teams design innovative solutions to global challenges.",
   },
   {
     id: 5,
     icon: icon5,
-    title: "Invite Update",
-    text: "Receive instant notifications for any updates to RSVPs, including additional guests or gift items",
+    title: "Core Values",
+    text: "Instill core values like discovery, impact, and fun, creating a culture of learning.",
   },
   {
     id: 6,
     icon: icon6,
-    title: "Special Note",
-    text: "RSVPs can include special notes or congratulatory messages to enhance the event experience",
+    title: "Global Themes",
+    text: "Compete with challenges based on annual global themes, such as energy and sustainability.",
   },
 ];
 
 const Features = () => {
   return (
     <section id="feature" className="">
-      <div className="bg-[#0D154B] flex flex-col justify-center items-center p-5 pb-12">
+      <div className="bg-[#0d2b42] flex flex-col justify-center items-center p-5 pb-12">
         <div className="text-center space-y-5 p-5 pt-10 ">
           <p className="text-[#BCC2FF] text-4xl font-bold">Features</p>
           <p className="text-white text-lg  md:text-xl">
-            Essential Tools for Seamless Planning and Delighted Guests.
+            Empowering Tools for Inspiring Innovation and Future Leaders.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:m-6">

@@ -47,7 +47,7 @@ const Hero = () => {
           </h1>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex sm:flex-row flex-col mt-4">
             <Link href="/">
-              <button className="bg-blue-500 hover:bg-blue-600 text-white text-lg px-12 py-3 rounded-md">
+              <button className="bg-[#0d2b42] hover:bg-blue-600 text-white text-lg px-12 py-3 rounded-md">
                 Get Started
               </button>
             </Link>
