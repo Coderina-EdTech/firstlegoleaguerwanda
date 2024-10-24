@@ -18,7 +18,7 @@ export const testimonialData = [
   {
     id: 2,
     comment:
-      "   In Explore, teams of students ages 6-10 focus on the fundamental of engineering as they explore real-world problems, learn to design, and code and create unique solutions made with LEGO bricks and powered by LEGO® Education WeDo 2.0.",
+      "In Explore, students ages 6-10 learn engineering basics by solving real-world problems. They design, code, and build creative solutions using LEGO bricks and LEGO® Education WeDo 2.0, encouraging innovation.",
 
     name: "First Logo Leaque Explore",
     Age: "Ages",
@@ -28,7 +28,7 @@ export const testimonialData = [
   {
     id: 3,
     comment:
-      "Friendly competition is at the heart of Challenge, as teams of students ages 9-16* engage in research, problem-solving, coding, and engineering – building and programming a LEGO robot that navigates the missions of a robot game.",
+      "Friendly competition drives the Challenge, where students ages 9-16 research, code, and engineer. Teams build and program LEGO robots to complete game missions, fostering creativity, problem-solving, and teamwork.",
 
     name: "First Logo Leaque Challenge",
     Age: "Ages",
@@ -70,19 +70,16 @@ const Card = () => {
             return (
               <div
                 key={data.id}
-                className="md:w-96 inline-block cursor-pointer relative p-2 text-center mx-5 space-y-5 py-5"
+                className="md:w-96  inline-block cursor-pointer relative p-2 text-center mx-5 space-y-5 py-5"
               >
                 <div
                   className="bg-[#0D154B] space-y-2 rounded-2xl text-[#FFFFFF] leading-[1.5rem] p-6 text-sm hover:shadow-lg shadow-[#0D154B] transition-all duration-200 whitespace-normal"
                   style={{ backgroundColor: `${data?.bgColor}` }}
                 >
-                  <div className="flex items-center justify-between ">
-                    <p className="font-semibold text-2xl px-10">{data.name}</p>
-                    <div>
-                      <p className="text-lg">{data.Age}</p>
-                      <p className="text-lg">{data.AgeN}</p>
-                    </div>
-                  </div>
+                  <p className="font-semibold text-xl text-center">
+                    {data.name}
+                  </p>
+
                   <div>
                     <p> {data.comment}</p>
                   </div>
