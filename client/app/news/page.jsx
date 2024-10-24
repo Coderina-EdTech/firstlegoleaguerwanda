@@ -6,7 +6,7 @@ import { RecentBlogPosts, AllBlogPosts } from "../api/categories";
 
 const Blog = () => {
   return (
-    <div className="px-2 md:px-4 lg:px-16">
+    <div className="px-2 md:px-4 lg:px-16 font-Inter">
       <div className="md:m-[4rem] m-[1rem]">
         <section>
           <h1 className="mb-[2rem] text-xl font-bold">
@@ -20,6 +20,7 @@ const Blog = () => {
                   alt="blog news"
                   width={420}
                   height={200}
+                  className="rounded-3xl"
                 />
               </div>
               <div className="w-full h-[172px] ">
@@ -40,7 +41,7 @@ const Blog = () => {
                   <Image
                     src={RecentBlogPosts.blogImg2}
                     alt="blog news"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-3xl"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -61,7 +62,7 @@ const Blog = () => {
                   <Image
                     src={RecentBlogPosts.blogImg3}
                     alt="blog news"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-3xl"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -83,9 +84,7 @@ const Blog = () => {
               <Image
                 src={RecentBlogPosts.blogImg4}
                 alt="blog news"
-                width={500}
-                height={200}
-                className="object-cover"
+                className="object-cover rounded-3xl w-full md:w-[31rem] h-48"
               />
             </div>
             <div className="md:w-[680px] ">
@@ -110,11 +109,11 @@ const Blog = () => {
             {AllBlogPosts.map((post) => (
               <div key={post.id}>
                 <Link href={`/news/${post.id}`}>
-                  <div className="w-full">
+                  <div className="w-full rounded-full">
                     <Image
                       src={post.blogImg}
                       alt="blog news"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div className="flex flex-col">
