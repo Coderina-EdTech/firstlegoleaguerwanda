@@ -22,7 +22,7 @@ const Involve = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8 p-10 bg-white rounded-lg shadow-md">
+      <div className="w-full max-w-lg rounded-3xl  p-5 shadow-xl  text-[28px] lg:text-3xl font-bold md:font-semibold border-b-[1px] border-slate-100">
         <div>
           <h2 className="text-center text-3xl font-extrabold text-gray-900">
             Get Involved in FLL
@@ -45,7 +45,7 @@ const Involve = () => {
                 value={formData.firstName}
                 onChange={handleChange}
                 placeholder="First Name"
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder:bg-transparent placeholder:text-[16px] text-[18px] text-[#0d2b42] focus:outline-none focus:ring-[#0d2b42] focus:border-[#0d2b42] focus:z-10 sm:text-sm"
               />
             </div>
             <div>
@@ -60,7 +60,7 @@ const Involve = () => {
                 value={formData.lastName}
                 onChange={handleChange}
                 placeholder="Last Name"
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder:bg-transparent placeholder:text-[16px] text-[18px] text-[#0d2b42] focus:outline-none focus:ring-[#0d2b42] focus:border-[#0d2b42] focus:z-10 sm:text-sm"
               />
             </div>
             <div>
@@ -75,7 +75,7 @@ const Involve = () => {
                 value={formData.country}
                 onChange={handleChange}
                 placeholder="Country"
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder:bg-transparent placeholder:text-[16px] text-[18px] text-[#0d2b42] focus:outline-none focus:ring-[#0d2b42] focus:border-[#0d2b42] focus:z-10 sm:text-sm"
               />
             </div>
             <div>
@@ -90,7 +90,7 @@ const Involve = () => {
                 value={formData.aboutParticipant}
                 onChange={handleChange}
                 placeholder="Tell us a little about yourself and your interest in FLL"
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-[#0d2b42] text-gray-900 rounded-b-md focus:outline-none focus:ring-[#0d2b42] focus:border-[#0d2b42] focus:z-10 placeholder:text-[16px] text-[18px] sm:text-sm"
               />
             </div>
           </div>
@@ -98,7 +98,7 @@ const Involve = () => {
           <div>
             <button
               type="submit"
-              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="group relative w-full transition-all duration-700 ease-in-out flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-[#0d2b42] hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               Submit
             </button>

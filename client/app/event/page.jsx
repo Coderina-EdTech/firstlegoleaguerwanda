@@ -49,8 +49,8 @@ const Event = () => {
   const totalPages = Math.ceil(filteredEvents.length / itemsPerPage);
 
   return (
-    <div className="py-10 px-5">
-      <h2 className="text-2xl font-bold text-center mb-8 text-blue-700">
+    <div className="py-10 px-5 lg:px-16">
+      <h2 className="text-2xl font-bold text-center mb-8 text-red-700">
         Upcoming FLL Events
       </h2>
 
@@ -61,7 +61,7 @@ const Event = () => {
           placeholder="Search by date (YYYY-MM-DD)"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="border-2 border-blue-700 px-4 py-2 rounded w-full md:w-1/2 lg:w-1/3 mx-auto"
+          className="border-2 border-[#0d2b42] px-4 py-2 rounded w-full md:w-1/2 lg:w-1/3 mx-auto"
         />
       </div>
 
@@ -69,7 +69,7 @@ const Event = () => {
       <div className="overflow-x-auto">
         <table className="min-w-full bg-white shadow-lg rounded-lg">
           <thead>
-            <tr className="bg-blue-700 text-white text-left">
+            <tr className="bg-[#0d2b42] text-white text-left">
               <th className="py-3 px-4">Event</th>
               <th className="py-3 px-4">Date</th>
               <th className="py-3 px-4">Location</th>
@@ -103,7 +103,7 @@ const Event = () => {
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
           disabled={currentPage === 1}
           className={`px-4 py-2 rounded-lg ${
-            currentPage === 1 ? "bg-gray-300" : "bg-blue-700 text-white"
+            currentPage === 1 ? "bg-gray-300" : "bg-red-700 text-white"
           } transition`}
         >
           Previous
@@ -119,9 +119,7 @@ const Event = () => {
           }
           disabled={currentPage === totalPages}
           className={`px-4 py-2 rounded-lg ${
-            currentPage === totalPages
-              ? "bg-gray-300"
-              : "bg-blue-700 text-white"
+            currentPage === totalPages ? "bg-gray-300" : "bg-red-700 text-white"
           } transition`}
         >
           Next
