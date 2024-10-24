@@ -10,7 +10,7 @@ export const testimonialData = [
     comment:
       "For children ages 4-6, this playful introductory STEM program ignites their natural curiosity and builds their habits of learning with hands-on activities in the classroom and at home using LEGO® DUPLO® bricks.",
 
-    name: "First Logo Leaque Discover",
+    name: "First Logo League Discover",
     Age: "Ages",
     AgeN: " 4-6",
     bgColor: `#0d2b42`,
@@ -20,7 +20,7 @@ export const testimonialData = [
     comment:
       "In Explore, students ages 6-10 learn engineering basics by solving real-world problems. They design, code, and build creative solutions using LEGO bricks and LEGO® Education WeDo 2.0, encouraging innovation.",
 
-    name: "First Logo Leaque Explore",
+    name: "First Logo League Explore",
     Age: "Ages",
     AgeN: " 6-10",
     bgColor: `#4f60d5`,
@@ -30,7 +30,7 @@ export const testimonialData = [
     comment:
       "Friendly competition drives the Challenge, where students ages 9-16 research, code, and engineer. Teams build and program LEGO robots to complete game missions, fostering creativity, problem-solving, and teamwork.",
 
-    name: "First Logo Leaque Challenge",
+    name: "First Logo League Challenge",
     Age: "Ages",
     AgeN: " 9-16",
     bgColor: `#4f60d5`,

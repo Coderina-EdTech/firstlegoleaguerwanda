@@ -16,7 +16,7 @@ const Conter = () => {
   }
 
   return (
-    <div className="h-[70vh] md:h-[93vh] relative">
+    <div className="h-[70vh] lg:h-[60vh] relative">
       {/* Banner Image Slider */}
       <div className="absolute inset-0">
         <Image src={color} alt="" fill className="object-cover" />

@@ -8,6 +8,8 @@ import Image from "next/image";
 import logo from "../../public/firstlogo.png";
 import { RiMenu4Line } from "react-icons/ri";
 import Link from "next/link";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -28,15 +30,39 @@ const Header = () => {
       {/* upside */}
       <div className="flex items-center justify-between md:px-6 lg:px-24 py-3 md:py-2 rounded-md bg-[#0d2b42] text-white px-2">
         <div>
-          <p className="text-[12px]  text-normal">
+          <p className="text-[12px] md:text-[15px]  text-normal">
             nigeriafll@hello@coderina.org
           </p>
         </div>
         {/* social media handles */}
-        <div className="flex items-center justify-center space-x-4">
-          <SiFacebook />
-          <RiTwitterFill />
-          <IoLogoInstagram />
+        <div className="flex items-center justify-center space-x-1">
+          <Link
+            href="https://x.com/coderina?t=NnqyAw6mAzPI6MFis7wa5A&s=09"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative p-1 bg-blue-500 text-white rounded-full shadow-lg transition transform hover:scale-110 hover:bg-blue-600"
+          >
+            <div className="absolute inset-0 rounded-full bg-blue-700 opacity-20 backdrop-blur-lg"></div>
+            <RiTwitterFill className="relative w-4 h-4" />
+          </Link>
+          <Link
+            href="https://web.facebook.com/coderinaedu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative p-1 bg-blue-600 text-white rounded-full shadow-lg transition transform hover:scale-110"
+          >
+            <div className="absolute inset-0 rounded-full bg-black opacity-20 backdrop-blur-lg"></div>
+            <FaFacebook className="relative w-4 h-4" />
+          </Link>
+          <Link
+            href="https://www.instagram.com/coderinaedu?igsh=b205ZzZ0ZHUxaml2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative p-1 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 text-white rounded-full shadow-lg transition transform hover:scale-110"
+          >
+            <div className="absolute inset-0 rounded-full bg-black opacity-20 backdrop-blur-lg"></div>
+            <FaInstagram className="relative w-4 h-4" />
+          </Link>
         </div>
       </div>
       {/* downside */}
