@@ -28,7 +28,9 @@ const Header = () => {
       {/* upside */}
       <div className="flex items-center justify-between md:px-6 lg:px-24 py-3 md:py-2 rounded-md bg-[#0d2b42] text-white px-2">
         <div>
-          <p className="text-[12px]  text-normal">nigeriafll@coderina.org</p>
+          <p className="text-[12px]  text-normal">
+            nigeriafll@hello@coderina.org
+          </p>
         </div>
         {/* social media handles */}
         <div className="flex items-center justify-center space-x-4">
