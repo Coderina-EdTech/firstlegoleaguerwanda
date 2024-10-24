@@ -7,3 +7,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add this CSS in your global styles or component-specific CSS */
+/* @keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide {
+  display: flex;
+  gap: 2rem;
+  animation: slide 20s linear infinite;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+} */

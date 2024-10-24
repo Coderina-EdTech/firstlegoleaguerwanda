@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoLogoInstagram } from "react-icons/io";
 import { SiFacebook } from "react-icons/si";
 import { RiTwitterFill } from "react-icons/ri";

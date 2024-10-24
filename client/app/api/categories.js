@@ -1,7 +1,8 @@
 import recentBlog1 from "../../public/recentBlog1.svg";
-import recentBlog2 from "../../public/recentBlog2.svg";
-import recentBlog3 from "../../public/recentBlog3.svg";
-import recentBlog4 from "../../public/recentBlog4.svg";
+
+import recentBlog3 from "../../public/pic1.jpg";
+import recentBlog4 from "../../public/pic3.jpg";
+import recentBlog2 from "../../public/pic2.jpg";
 
 export const RecentBlogPosts = {
   id: 1,

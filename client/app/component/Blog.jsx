@@ -82,7 +82,9 @@ const Blog = () => {
               <Image
                 src={RecentBlogPosts.blogImg4}
                 alt="blog news"
-                className="w-full h-full"
+                width={500}
+                height={200}
+                className="object-cover"
               />
             </div>
             <div className="md:w-[680px] ">
