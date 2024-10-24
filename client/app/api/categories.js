@@ -34,42 +34,6 @@ export const RecentBlogPosts = {
 
 export const AllBlogPosts = [
   {
-    id: 1,
-    category: "All Blog Posts",
-    title: "UX review presentations",
-    blogImg: recentBlog3,
-    headingExcept:
-      "How do you create compelling presentations that wow your colleagues and impress your managers?",
-    date: "Olivia Rhye • 1 Jan 2023",
-  },
-  {
-    id: 2,
-    category: "All Blog Posts",
-    title: "UX review presentations",
-    blogImg: recentBlog3,
-    headingExcept:
-      "How do you create compelling presentations that wow your colleagues and impress your managers?",
-    date: "Olivia Rhye • 1 Jan 2023",
-  },
-  {
-    id: 3,
-    category: "All Blog Posts",
-    title: "UX review presentations",
-    blogImg: recentBlog3,
-    headingExcept:
-      "How do you create compelling presentations that wow your colleagues and impress your managers?",
-    date: "Olivia Rhye • 1 Jan 2023",
-  },
-  {
-    id: 4,
-    category: "All Blog Posts",
-    title: "UX review presentations",
-    blogImg: recentBlog3,
-    headingExcept:
-      "How do you create compelling presentations that wow your colleagues and impress your managers?",
-    date: "Olivia Rhye • 1 Jan 2023",
-  },
-  {
     id: 5,
     category: "All Blog Posts",
     title: "UX review presentations",
@@ -80,6 +44,42 @@ export const AllBlogPosts = [
   },
   {
     id: 6,
+    category: "All Blog Posts",
+    title: "UX review presentations",
+    blogImg: recentBlog3,
+    headingExcept:
+      "How do you create compelling presentations that wow your colleagues and impress your managers?",
+    date: "Olivia Rhye • 1 Jan 2023",
+  },
+  {
+    id: 7,
+    category: "All Blog Posts",
+    title: "UX review presentations",
+    blogImg: recentBlog3,
+    headingExcept:
+      "How do you create compelling presentations that wow your colleagues and impress your managers?",
+    date: "Olivia Rhye • 1 Jan 2023",
+  },
+  {
+    id: 8,
+    category: "All Blog Posts",
+    title: "UX review presentations",
+    blogImg: recentBlog3,
+    headingExcept:
+      "How do you create compelling presentations that wow your colleagues and impress your managers?",
+    date: "Olivia Rhye • 1 Jan 2023",
+  },
+  {
+    id: 9,
+    category: "All Blog Posts",
+    title: "UX review presentations",
+    blogImg: recentBlog3,
+    headingExcept:
+      "How do you create compelling presentations that wow your colleagues and impress your managers?",
+    date: "Olivia Rhye • 1 Jan 2023",
+  },
+  {
+    id: 10,
     category: "All Blog Posts",
     title: "UX review presentations",
     blogImg: recentBlog3,
@@ -90,7 +90,7 @@ export const AllBlogPosts = [
 ];
 export const RelatedBlogPosts = [
   {
-    id: 1,
+    id: 11,
     category: "Related Blog Post",
     title: "UX review presentations",
     blogImg: recentBlog2,
@@ -99,7 +99,7 @@ export const RelatedBlogPosts = [
     date: "Olivia Rhye • 1 Jan 2023",
   },
   {
-    id: 2,
+    id: 12,
     category: "Related Blog Post",
     title: "UX review presentations",
     blogImg: recentBlog2,
@@ -108,7 +108,7 @@ export const RelatedBlogPosts = [
     date: "Olivia Rhye • 1 Jan 2023",
   },
   {
-    id: 3,
+    id: 13,
     category: "Related Blog Post",
     title: "UX review presentations",
     blogImg: recentBlog2,
@@ -117,7 +117,7 @@ export const RelatedBlogPosts = [
     date: "Olivia Rhye • 1 Jan 2023",
   },
   {
-    id: 4,
+    id: 14,
     category: "Related Blog Post",
     title: "UX review presentations",
     blogImg: recentBlog2,
@@ -126,7 +126,7 @@ export const RelatedBlogPosts = [
     date: "Olivia Rhye • 1 Jan 2023",
   },
   {
-    id: 5,
+    id: 15,
     category: "Related Blog Post",
     title: "UX review presentations",
     blogImg: recentBlog3,
@@ -135,7 +135,7 @@ export const RelatedBlogPosts = [
     date: "Olivia Rhye • 1 Jan 2023",
   },
   {
-    id: 6,
+    id: 16,
     category: "Related Blog Post",
     title: "UX review presentations",
     blogImg: recentBlog3,

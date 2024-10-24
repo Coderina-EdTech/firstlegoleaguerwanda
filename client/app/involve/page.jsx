@@ -5,7 +5,7 @@ const Involve = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    country: "",
+    school: "",
     aboutParticipant: "",
   });
 
@@ -64,17 +64,17 @@ const Involve = () => {
               />
             </div>
             <div>
-              <label htmlFor="country" className="sr-only">
+              <label htmlFor="School" className="sr-only">
                 Country
               </label>
               <input
-                id="country"
-                name="country"
+                id="school"
+                name="school"
                 type="text"
                 required
-                value={formData.country}
+                value={formData.school}
                 onChange={handleChange}
-                placeholder="Country"
+                placeholder="School"
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder:bg-transparent placeholder:text-[16px] text-[18px] text-[#0d2b42] focus:outline-none focus:ring-[#0d2b42] focus:border-[#0d2b42] focus:z-10 sm:text-sm"
               />
             </div>

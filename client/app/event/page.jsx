@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { IoMdSearch } from "react-icons/io";
 
 const events = [
   {
@@ -57,12 +58,13 @@ const Event = () => {
       {/* Search Bar */}
       <div className="mb-8">
         <input
-          type="text"
+          type="search"
           placeholder="Search by date (YYYY-MM-DD)"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="border-2 border-[#0d2b42] px-4 py-2 rounded w-full md:w-1/2 lg:w-1/3 mx-auto"
+          className="border-2 border-[#0d2b42] px-4 outline-none rounded-2xl py-2  w-full md:w-1/2 lg:w-1/3 mx-auto"
         />
+        {/* <IoMdSearch /> */}
       </div>
 
       {/* Event Table */}
