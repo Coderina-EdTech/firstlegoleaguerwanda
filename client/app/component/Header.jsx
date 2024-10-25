@@ -86,7 +86,7 @@ const Header = () => {
             <p className={getLinkClass("/event")}>EVENTS</p>
           </Link>
           <Link href="/news">
-            <p className={getLinkClass("/news")}>NEWS AND UPDATES</p>
+            <p className={getLinkClass("/news")}>BLOG AND UPDATES</p>
           </Link>
           <Link href="/involve">
             <p className={getLinkClass("/involve")}>GET INVOLVED</p>
