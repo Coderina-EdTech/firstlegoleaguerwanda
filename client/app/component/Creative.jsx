@@ -1,4 +1,5 @@
 import React from "react";
+import { FlipButton } from "../shared/Button";
 
 const Creative = () => {
   return (
@@ -15,7 +16,10 @@ const Creative = () => {
           powered by Android technology, and can be coded using a variety of
           levels of Java-based programming.
         </p>
-        <button>Get Started</button>
+
+        <div className="flex items-center justify-center w-full">
+          <FlipButton frontText="Get Started" backText="GO!" />
+        </div>
       </div>
       <div className="w-full md:w-[65%] font-poppins pl-6 md:px-8 lg:px-20 py-14 hidden md:grid grid-cols-2 bg-blue-50 items-center justify-center">
         <div className=" md:pl-4 space-y-2 lg:space-y-4">

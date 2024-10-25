@@ -51,7 +51,7 @@ const Hero = () => {
                 Get Started
               </button>
             </Link>
-            <Link href="/">
+            <Link href="/register">
               <button className="border border-white text-white text-[16px] px-3 py-3 rounded-md hover:border-gray-400">
                 Register Your School
               </button>
