@@ -139,7 +139,7 @@ const Header = () => {
                 onClick={() => setMenuOpen(false)}
                 className={getLinkClass("/news")}
               >
-                NEWS AND UPDATES
+                BLOG AND UPDATES
               </p>
             </Link>
             <Link href="/involve">

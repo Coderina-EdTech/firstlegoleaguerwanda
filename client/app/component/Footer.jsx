@@ -7,7 +7,7 @@ import game from "../../public/game.jpg";
 const Footer = () => {
   return (
     <div className=" ">
-      <div className="h-[93vh] relative">
+      <div className="h-[70vh] lg:h-[75vh] relative">
         {/* Banner Image Slider */}
         <div className="absolute inset-0">
           <Image src={game} alt="" fill className="object-cover" />
