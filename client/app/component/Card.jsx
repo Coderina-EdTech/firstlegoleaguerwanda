@@ -64,7 +64,7 @@ const Card = () => {
       <div className="flex flex-col items-center justify-center text-center  sm:px-12 ">
         <div
           id="slider"
-          className="w-full h-full overflow-x-auto whitespace-nowrap scrollbar-hide scroll-smooth relative py-2 transition-all"
+          className="no-scrollbar w-full h-full overflow-x-auto whitespace-nowrap scrollbar-hide scroll-smooth relative py-2 transition-all"
         >
           {testimonialData.map((data) => {
             return (

@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <div className="font-Lato shadow-md sticky top-0 bottom-0 bg-white z-[999]">
       {/* Upper Section */}
-      <div className="flex items-center justify-between md:px-6 lg:px-24 py-3 md:py-2 rounded-md bg-[#0d2b42] text-white px-2">
+      <div className="flex items-center justify-between md:px-6 lg:px-24 py-3 md:py-2  bg-[#0d2b42] text-white px-2">
         <div>
           <p className="text-[12px] md:text-[15px] text-normal">
             hello@coderina.org

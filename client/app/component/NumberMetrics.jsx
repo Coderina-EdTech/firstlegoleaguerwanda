@@ -13,7 +13,7 @@ const NumberMetrics = () => {
   return (
     <div className="" ref={ref}>
       {inView && (
-        <div className="flex items-center justify-between md:justify-around py-5 px-3 md:px-10 bg-[#a8a4a4]">
+        <div className="flex items-center justify-between md:justify-around py-10 md:pt-20 px-3 md:px-10">
           <div className="flex flex-col items-center justify-center text-[#0d2b42] cursor-pointer text-center counter font-bold">
             <CountUp
               start={0}
