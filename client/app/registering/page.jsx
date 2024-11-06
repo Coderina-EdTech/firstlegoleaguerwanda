@@ -11,9 +11,10 @@ const RegistrationPage = () => {
     lastName: "",
     institution: "",
     country: "",
-    team: "",
+    aboutParticipant: "",
     checkbox: false,
   };
+  const [loading, setLoading] = useState(false);
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
@@ -33,8 +34,15 @@ const RegistrationPage = () => {
     setFormErrors(validate(formValues));
     setIsSubmit(true);
 
-    const { email, country, firstName, lastName, institution, team, checkbox } =
-      formValues;
+    const {
+      email,
+      country,
+      firstName,
+      lastName,
+      institution,
+      aboutParticipant,
+      checkbox,
+    } = formValues;
 
     // Check if any field is empty
     if (
@@ -43,7 +51,7 @@ const RegistrationPage = () => {
       firstName === "" ||
       lastName === "" ||
       institution === "" ||
-      team === "" ||
+      aboutParticipant === "" ||
       checkbox === false
     ) {
       toast.error("Please fill in all fields"); // Display error message
@@ -71,7 +79,7 @@ const RegistrationPage = () => {
     if (!values.country) {
       errors.country = "Your country's name is required!";
     }
-    if (!values.team) {
+    if (!values.aboutParticipant) {
       errors.team = "Your Team name is required!";
     }
     if (!values.email) {
@@ -95,34 +103,20 @@ const RegistrationPage = () => {
       <div className=" lg:px-20 py-4">
         {" "}
         <div className="flex flex-col items-start justify-start px-2 md:px-16 pb-8 md:py-10 lg:py-16 w-full shadow-md  bg-white">
-          <div className="w-full pt-5 md:pt-1 text-[28px] lg:text-3xl font-bold md:font-semibold pb-6 lg:pb-8 border-b-[1px] border-slate-300">
-            <h1 className="text-green-900 leading-10">
-              FIRST LEGO LEAGUE REGISTRATION
-            </h1>
+          <div className="w-full pt-5 md:pt-1 text-[28px] lg:text-4xl font-bold md:font-semibold pb-4 lg:pb-3 border-b-[1px] border-slate-300">
+            <h1 className="text-red-500 leading-10">Get Involved in FLL</h1>
           </div>
+          <p className="mt-3 text-gray-600">
+            Fill out the form to submit your details.
+          </p>
           <form
             action="form"
             onSubmit={handleSubmit}
             className="w-full md:w-3/4"
           >
-            <div className="pt-6 space-y-2">
-              <label htmlFor="">Team name*</label>
-              <input
-                type="text"
-                name="team"
-                value={formValues.team}
-                onChange={handleChange}
-                className="w-full md:px-2 py-1 border-[1px] border-slate-300 outline-none"
-              />
-
-              <p className="text-sm text-red-600 pl-1 font-medium">
-                {formErrors.team}
-              </p>
-            </div>
-
             <div className="w-full">
-              <div className="py-14 lg:py-16 space-y-6">
-                <h2 className="text-xl font-medium">Team Member 1 (Captain)</h2>
+              <div className="py-8 lg:py-10 space-y-2">
+                <h2 className="text-xl font-medium"></h2>
 
                 <div className="w-full flex flex-col md:flex-row items-start justify-start md:justify-between gap-3">
                   <div className="space-y-3 ">
@@ -160,7 +154,7 @@ const RegistrationPage = () => {
                         name="email"
                         value={formValues.email}
                         onChange={handleChange}
-                        placeholder="only university/college emails accepted"
+                        placeholder="example@gmail.com"
                         className="w-[20rem] text-[14px] md:w-80 outline-none   pl-2 border-[1px] border-slate-300 rounded-md py-1 placeholder:text-sm placeholder:pl-4"
                       />
                       <p className="text-sm text-red-600 pl-1 font-medium">
@@ -177,7 +171,7 @@ const RegistrationPage = () => {
                         name="institution"
                         value={formValues.institution}
                         onChange={handleChange}
-                        placeholder="only university/college institutions accepted"
+                        placeholder=""
                         className=" pl-2 border-[1px] border-slate-300 rounded-md w-[20rem] md:w-80 text-[14px]  py-1 placeholder:text-sm placeholder:pl-4 outline-none"
                       />
                       <p className="text-sm text-red-600 pl-1 font-medium">
@@ -200,83 +194,24 @@ const RegistrationPage = () => {
                   </div>
                 </div>
               </div>
-
-              <div className="py-4 space-y-6">
-                <h2 className="text-xl font-medium">
-                  Team Member 2 (optional)
-                </h2>
-
-                <div className="flex flex-col md:flex-row items-start justify-start md:justify-between gap-3">
-                  <div className="space-y-3">
-                    <div className="flex flex-col items-start justify-start space-y-1">
-                      <label htmlFor="">First name*</label>
-                      <input
-                        type="text"
-                        className=" pl-2 border-[1px] border-slate-300 rounded-md w-[20rem] md:w-80  py-1 outline-none"
-                      />
-                    </div>
-
-                    <div className="flex flex-col items-start justify-start space-y-1">
-                      <label htmlFor="">Last name*</label>
-                      <input
-                        type="text"
-                        className=" pl-2 border-[1px] border-slate-300 rounded-md w-[20rem] md:w-80  py-1 outline-none"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="space-y-3">
-                    <div className="flex flex-col items-start justify-start space-y-1">
-                      <label htmlFor="">Email*</label>
-                      <input
-                        type="Email"
-                        placeholder="only university/college emails accepted"
-                        className="outline-none pl-2 border-[1px] border-slate-300 rounded-md w-[20rem] md:w-80  py-1 placeholder:text-sm placeholder:pl-4"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="py-6 lg:py-10 space-y-6">
-                <h2 className="text-xl font-medium">
-                  Team Member 3 (optional)
-                </h2>
-
-                <div className="flex flex-col md:flex-row items-start justify-start md:justify-between gap-3">
-                  <div className="space-y-3">
-                    <div className="flex flex-col items-start justify-start space-y-1">
-                      <label htmlFor="">First name*</label>
-                      <input
-                        type="text"
-                        className="outline-none pl-2 border-[1px] border-slate-300 rounded-md w-[20rem] md:w-80  py-1"
-                      />
-                    </div>
-
-                    <div className="flex flex-col items-start justify-start space-y-1">
-                      <label htmlFor="">Last name*</label>
-                      <input
-                        type="text"
-                        className="hover:outline-none outline-none pl-1 border-[1px] border-slate-300 rounded-md w-[20rem] md:w-80 py-1"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="space-y-3">
-                    <div className="flex flex-col items-start justify-start space-y-1">
-                      <label htmlFor="">Email*</label>
-                      <input
-                        type="Email"
-                        placeholder="only university/college emails accepted"
-                        className="outline-none pl-2 border-[1px] border-slate-300 rounded-md w-[20rem] md:w-80  py-1 placeholder:text-sm placeholder:pl-4"
-                      />
-                    </div>
-                  </div>
-                </div>
+              <div>
+                <label htmlFor="aboutParticipant" className="sr-only">
+                  About Participant
+                </label>
+                <textarea
+                  id="aboutParticipant"
+                  name="aboutParticipant"
+                  rows="6"
+                  required
+                  value={formValues.aboutParticipant}
+                  onChange={handleChange}
+                  placeholder="Tell us a little about yourself and your interest in FLL"
+                  className="appearance-none placeholder:text-[15px] rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder:text-gray-600  text-gray-900 rounded-b-md focus:outline-none focus:ring-[#0d2b42] focus:border-[#0d2b42] focus:z-10  text-[18px] sm:text-sm"
+                />
               </div>
             </div>
 
-            <div className="space-y-4 text-[14px] items-start">
+            <div className="space-y-4 text-[14px] items-start mt-8">
               <h3 className="">
                 FLL will use, process and store your personal data at all times
                 in compliance with our Privacy Policy.
@@ -304,8 +239,9 @@ const RegistrationPage = () => {
               <button
                 type="submit"
                 className="px-8 py-3 text-sm cursor-pointer bg-green-900 text-white rounded-md hover:shadow-sm hover:scale-105 transition-all duration-500 ease-in-out hover:border-[1px] hover:border-green-900 hover:bg-transparent hover:text-green-900"
+                disabled={loading}
               >
-                REGISTER
+                {loading ? "Submitting..." : "REGISTER"}
               </button>
             </div>
           </form>

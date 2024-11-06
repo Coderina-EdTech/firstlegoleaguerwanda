@@ -88,7 +88,7 @@ const Header = () => {
           <Link href="/news">
             <p className={getLinkClass("/news")}>BLOG AND UPDATES</p>
           </Link>
-          <Link href="/involve">
+          <Link href="/registering">
             <p className={getLinkClass("/involve")}>GET INVOLVED</p>
           </Link>
         </div>
@@ -142,7 +142,7 @@ const Header = () => {
                 BLOG AND UPDATES
               </p>
             </Link>
-            <Link href="/involve">
+            <Link href="/registering">
               <p
                 onClick={() => setMenuOpen(false)}
                 className={getLinkClass("/involve")}
