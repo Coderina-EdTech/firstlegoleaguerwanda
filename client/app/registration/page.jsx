@@ -123,7 +123,7 @@ const Registration = () => {
             </h1>
           </div>
           <form
-            action="form"
+            action="for"
             onSubmit={handleSubmit}
             method="POST"
             className="w-full md:w-3/4"
