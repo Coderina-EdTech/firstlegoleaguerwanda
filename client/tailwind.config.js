@@ -12,7 +12,8 @@ module.exports = {
       Poppins: ["Poppins", "sans-serif"],
       Lato: ["Lato", "sans-serif"],
       Montserrat: ["Montserrat", "sans-serif"],
-      Inter: ["Inter", "sans-serif"],
+
+      Geist: ["Geist Mono", "monospace"],
     },
     extend: {
       backgroundImage: {
