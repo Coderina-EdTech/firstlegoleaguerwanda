@@ -3,7 +3,7 @@
 import React from "react";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import logo from "../public/firstlogo.png"; // Ensure this is used somewhere if needed
+
 import { SessionProvider } from "next-auth/react";
 import Navbar from "./Home/components/Navbar";
 
@@ -21,15 +21,18 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="icon"
-          href="/firstlogo.png" // Ensure the favicon path is correct
+          href="/coderinaBgLogo.png" // Ensure the favicon path is correct
           type="image/png"
+          className="w-48"
         />
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </head>
-      <body className="font-Geist">
-        <Navbar />
-        <SessionProvider>{children}</SessionProvider>
+      <body className="font-Inter">
+        <div>
+          {/* <Navbar /> */}
+          <SessionProvider>{children}</SessionProvider>
+        </div>
       </body>
     </html>
   );

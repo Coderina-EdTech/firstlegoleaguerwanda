@@ -5,7 +5,7 @@ import scopeImg1 from "../../../public/scope-img1.png";
 import scopeImg2 from "../../../public/scope-img2.png";
 import scopeImg3 from "../../../public/scope-img3.png";
 import scopeImg4 from "../../../public/scope-img4.png";
-import SolutionCards from "../../dashboard/SolutionCards";
+import SolutionCards from "@/app/Home/components/SolutionCards";
 // import { details } from "framer-motion/client";
 
 const Scope = () => {

@@ -30,10 +30,11 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar />
       <Box
         className="header__container "
-        style={{ backgroundImage: `url("${BGPattern}")` }}
+        // sx={{
+        //   backgroundImage: `url(${BGPattern})`,
+        // }}
       >
         <Stack gap={3}>
           <Stack>

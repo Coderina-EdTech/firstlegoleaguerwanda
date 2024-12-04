@@ -14,7 +14,7 @@ import newsImg1 from "../../../public/newsImg1.png";
 import newsImg2 from "../../../public/newsImg2.png";
 import newsImg3 from "../../../public/newsImg3.png";
 import newsImg4 from "../../../public/newsImg4.png";
-import SolutionCards from "../../dashboard/SolutionCards";
+import SolutionCards from "./SolutionCards";
 import Image from "next/image";
 
 const News = () => {

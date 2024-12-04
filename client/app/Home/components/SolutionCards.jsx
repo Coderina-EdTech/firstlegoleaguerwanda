@@ -14,7 +14,7 @@ const SolutionCards = ({
   return (
     <Grid size={{ xs: 12, sm: 5.8, md: 2.85 }} key={text}>
       <Card sx={{ borderRadius: {} }}>
-        <Image src={img} alt="" width={320} className="h-full object-cover" />
+        <Image src={img} width={"320px"} />
       </Card>
       <Typography fontSize={{ xs: "12px", md: "14px" }}>{childern}</Typography>
       <Typography fontSize={{ xs: "12px", md: "14px" }}>{childern1}</Typography>

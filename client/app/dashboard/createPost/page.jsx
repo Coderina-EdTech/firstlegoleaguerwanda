@@ -1,8 +1,10 @@
+"use client";
+
 import React, { useState } from "react";
-import TextEditor from "../../../components/TextEditor";
-import { useRouter } from "next/router";
+import TextEditor from "../component/TextEditor";
+import { useRouter } from "next/navigation";
 import { FaArrowLeft } from "react-icons/fa";
-import PostPreview from "../../../components/PreviewModal";
+import PostPreview from "../component/PreviewModal";
 
 export default function CreatePost() {
   const [isModalOpen, setIsModalOpen] = useState(false);

@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Box,
@@ -11,6 +13,7 @@ import Grid from "@mui/material/Grid2";
 import activeImg from "../../../public/activityImg.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
 
 const Activity = () => {
   const textContent1 = [
@@ -36,14 +39,15 @@ const Activity = () => {
       <Stack>
         <Grid container className="activity__cards">
           <Grid size={{ xs: 12, sm: 5.8, md: 5.9 }} className="activity__grid">
-            <Card
+            <Image
               className=""
-              style={{ backgroundImage: `url("${activeImg}")` }}
-            >
-              <Stack>
-                <Typography>FIRST LEGO League Programs</Typography>
-              </Stack>
-            </Card>
+              src={activeImg}
+              // style={{ backgroundImage: `url("${activeImg}")` }}
+            />
+            <Stack>
+              <Typography>FIRST LEGO League Programs</Typography>
+            </Stack>
+
             <Card>
               <CardContent>
                 <Stack gap={2}>

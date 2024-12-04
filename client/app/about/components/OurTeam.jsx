@@ -4,8 +4,9 @@ import Grid from "@mui/material/Grid2";
 import { FaArrowRightLong } from "react-icons/fa6";
 import CustomButton from "../../Home/components/CustomButton";
 import memberImg from "../../../public/member-img.png";
-import SolutionCards from "../../dashboard/SolutionCards";
+
 import Image from "next/image";
+import SolutionCards from "@/app/Home/components/SolutionCards";
 
 const OurTeam = () => {
   const ourTeamCard = [

@@ -22,6 +22,7 @@ import {
 import Header from "./Home/components/Header";
 import AboutSection from "./Home/components/AboutSection";
 import Activity from "./Home/components/Activity";
+import Navbar from "./Home/components/Navbar";
 
 export default function Home() {
   const homeContents1 = [
@@ -60,15 +61,18 @@ export default function Home() {
   ];
 
   return (
-    <Box overflow={"hidden"}>
-      <Box bgcolor={headerBackground}>
-        <Header />
-      </Box>
-      {homeContents1.map(({ color, section }) => (
-        <Box p={4} key={section} bgcolor={color}>
-          <Container maxWidth="xl">{section}</Container>
+    <div className="font-Geist">
+      <Navbar />
+      <Box overflow={"hidden"}>
+        <Box bgcolor={headerBackground}>
+          <Header />
         </Box>
-      ))}
-    </Box>
+        {homeContents1.map(({ color, section }) => (
+          <Box p={4} key={section} bgcolor={color}>
+            <Container maxWidth="xl">{section}</Container>
+          </Box>
+        ))}
+      </Box>
+    </div>
   );
 }

@@ -1,13 +1,15 @@
+"use client";
 import { useRouter } from "next/router";
 import { useRef, useState } from "react";
-import Layout from "../../../components/writer/Layout";
+
 import PersonIcon from "@mui/icons-material/Person";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
-import LineChart from "../../../components/layout/LineChart";
+
 import FilterListIcon from "@mui/icons-material/FilterList";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { MdKeyboardArrowDown, MdCalendarToday } from "react-icons/md";
-import Modal from "../../../components/layout/Modal";
+import Modal from "../component/Modal";
+import LineChart from "../component/LineChart";
 const SubscriberTable = ({ subscribers }) => {
   const [selectAll, setSelectAll] = useState(false);
   const [selectedSubscribers, setSelectedSubscribers] = useState([]);
@@ -163,8 +165,8 @@ const SubscribersTable = () => {
   };
 
   return (
-    <Layout>
-      <div className="container mx-auto p-4 mb-48">
+    <div>
+      <div className="container mx-auto mb-48">
         <h1 className="text-2xl m-6 font-bold">{user.name + "s"} Substack</h1>
         <div className="flex justify-center items-center w-full">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-8 lg:gap-12 w-full max-w-screen-lg px-4">
@@ -248,22 +250,22 @@ const SubscribersTable = () => {
       <div
         role="button"
         aria-label="Open Chatbot"
-        className="mb-28 flex justify-end  right-0 mr-4 mb-4"
+        className="mb-28 flex justify-end  right-0 mr-4 "
         tabindex="1"
       >
         <button className="bg-gray-800 text-2xl rounded-full text-white p-6">
           Ask a question
         </button>
       </div>
-    </Layout>
+    </div>
   );
 };
 
-export async function getServerSideProps(context) {
-  const { writer } = context.query;
-  return {
-    props: { writer },
-  };
-}
+// export async function getServerSideProps(context) {
+//   const { writer } = context.query;
+//   return {
+//     props: { writer },
+//   };
+// }
 
 export default SubscribersTable;
